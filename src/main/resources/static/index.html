@@ -6,15 +6,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html>
     <head>
         <title>Pagina Jorklin</title>
+        <link rel="stylesheet" href="CSS/index.css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Pagina inicial</h1>
-        <h2>Pagina inicial</h2>
-        <h3>Pagina inicial</h3>
-        <h4>Pagina inicial</h4>
-        <h5>Pagina inicial</h5>
+        
+        <div class='block'>
+            <h1>BLOQUE</h1>
+        </div>
+        
+        <div class='static'>ESTO ES ESTATICO</div>
+        
+        <div class='absolute'>ESTO ES ABSOLUTO</div>
+        
+        <div class='relative'>
+            ESTO ES RELATIVO
+            <div class='absolute'>ESTO ES ABSOLUTO</div>
+        </div>
+        
+        <div class='fixed'>ESTO ES FIXED</div>
+        
+        <div> <!-- Etiqueta generica, funciona para todo. No tiene logica. -->
+            <h1>Pagina inicial</h1>
+            <h2>Pagina inicial</h2>
+            <h3>Pagina inicial</h3>
+        </div>
+        
+        <article> <!-- Se usa para informacion independiente, que este en contexto al tema -->
+            <h4>Pagina inicial</h4>
+            <h5>Pagina inicial</h5>  
+        </article>
+        
+        <section><!-- Solo hace sentido en la pagina que este y que sea un tema especifico a la pagina -->
+            <h6>Pagina inicial</h6>  
+        </section>
         
         <p>Esta es la primer pagina del curso Web y patrones</p>
         
@@ -37,12 +63,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             
         </ol>
         
+         <a href="home.html"> HOME </a>
+         
         <!-- Hipervinculo absoluto a server externo 
              Hipervinculo relativo va a server directamente-->
-        
-        <a href="https://www.youtube.com/watch?v=LkKF8MQhsdY&list=PLzDvEFuRQveAxVqfFyi7hQOtSn_eAJC4Z&ab_channel=WilbertJes%C3%BAsMolina">
-           Hola mundo 
-        </a>
+
         
     </body>
 </html>

@@ -1,0 +1,51 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 sep. 2022, 19:14:17
+    Author     : Jorklin
+*/
+
+.block{
+    
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 20px solid blue;
+    box-sizing: border-box;
+
+}
+
+.static{
+    
+    position:static;
+    border: 3px solid green;
+    top: 400px;
+    left: 500px;
+}
+
+.absolute{
+    position:absolute;
+    border: 3px solid purple;
+    top: 200px;
+    left: 100px;
+}
+
+.relative{
+    position:relative;
+    border: 3px solid brown;
+    top: 400px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+}
+
+.fixed{
+    position:fixed;
+    border: 3px solid gold;
+    top: 400px;
+    left: 500px;
+
+}
