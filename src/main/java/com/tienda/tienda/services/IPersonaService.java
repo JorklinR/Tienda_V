@@ -11,6 +11,9 @@ import com.tienda.tienda.entity.Persona;
  * @author Jorklin
  */
 public interface IPersonaService {
-    public List<Persona> listPeople();
+    public List<Persona> getAllPersona();
+    public Persona getPersonaById(long id);
+    public void savePersona(Persona persona);
+    public void delete(long id);
     
 }

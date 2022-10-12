@@ -28,11 +28,12 @@ public class Persona implements Serializable{
      private String apellido1;
      private String apellido2;
      private String telefono;
-     private String mail;
+     private String email;
      
      @ManyToOne
      @JoinColumn(name="paises_id")
      private Pais pais;
+     
     /**
      * @return the id
      */
@@ -106,15 +107,25 @@ public class Persona implements Serializable{
     /**
      * @return the mail
      */
-    public String getMail() {
-        return mail;
+    public String getEmail() {
+        return email;
     }
 
-    /**
-     * @param mail the mail to set
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+     /* @return the pais
      */
-    public void setMail(String mail) {
-        this.mail = mail;
+    public Pais getPais() {
+        return pais;
+    }
+
+    
+     /* @param pais the pais to set
+     */
+    public void setPais(Pais pais) {
+        this.pais = pais;
     }
 
 }
